@@ -1,10 +1,34 @@
 /**
+ * 回文链表
+ * 难度：简单
+ * 
+ * 题目：给你一个单链表的头节点 head ，请你判断该链表是否为回文链表。如果是，返回 true ；否则，返回 false 。
+ * 
+ * 示例：
+ * 输入：head = [1, 2, 2, 1]
+ * 输出：true
+ * 
+ * 输入：head = [1, 2]
+ * 输出：false
+ * 
+ * 解题思路：
+ * 1. 使用快慢指针找到链表的中点
+ * 2. 反转后半部分链表
+ * 3. 比较前半部分和后半部分链表的值
+ * 4. 如果所有值都相等，返回true，否则返回false
+ * 
+ * 时间复杂度：O(n)，其中 n 是链表的长度。每个节点会被访问一次。
+ * 空间复杂度：O(1)，只使用了常数级别的额外空间。
+ */
+
+/**
  * Definition for singly-linked list.
  * function ListNode(val, next) {
  *     this.val = (val===undefined ? 0 : val)
  *     this.next = (next===undefined ? null : next)
  * }
  */
+
 /**
  * @param {ListNode} head
  * @return {boolean}

@@ -1,4 +1,23 @@
 /**
+ * 翻转二叉树
+ * 难度：简单
+ * 
+ * 题目：给你一棵二叉树的根节点 root ，翻转这棵二叉树，并返回其根节点。
+ * 
+ * 示例：
+ * 输入：root = [4, 2, 7, 1, 3, 6, 9]
+ * 输出：[4, 7, 2, 9, 6, 3, 1]
+ * 
+ * 解题思路：
+ * 1. 递归实现：对于每个节点，交换其左右子树，然后递归翻转左右子树
+ * 2. 终止条件：当节点为null时，直接返回null
+ * 3. 交换操作：使用临时变量交换左右子树
+ * 
+ * 时间复杂度：O(n)，其中 n 是二叉树的节点数。每个节点会被访问一次。
+ * 空间复杂度：O(n)，其中 n 是二叉树的节点数。递归栈的深度最多为 n。
+ */
+
+/**
  * Definition for a binary tree node.
  * function TreeNode(val, left, right) {
  *     this.val = (val===undefined ? 0 : val)
@@ -6,6 +25,7 @@
  *     this.right = (right===undefined ? null : right)
  * }
  */
+
 /**
  * @param {TreeNode} root
  * @return {TreeNode}
